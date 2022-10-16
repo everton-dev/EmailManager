@@ -1,0 +1,2 @@
+# EmailManager
+Email manager
