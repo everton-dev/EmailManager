@@ -15,7 +15,7 @@ Task.Run(() =>
         cancellationTokenSource.Cancel();
 });
 
-var emailInboxManager = new EmailInboxManager("pop.gmail.com", "everton.devbr@gmail.com", "nnxzxiljwlxjtyht", true);
+var emailInboxManager = new EmailInboxManager("<server>", "<your-email>", "<password>", true);
 var emailList = new List<Email>();
 
 _ = emailInboxManager.MonitorNewEmailAsync(cancellationTokenSource.Token);
